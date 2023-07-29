@@ -84,3 +84,28 @@ main>h1{
     border: none;
     border-radius: 20px;
 }
+ @media (max-width:700px){
+    main{
+        padding-bottom: 70px;
+    }
+    main>h1{
+        text-align: center;
+        margin: 40px 0px;
+        white-space: nowrap;
+
+    } 
+    .titleCard h1{
+        font-size: 20px;
+    }
+    .card{
+        height: 400px;
+    }
+    .Footer input[type=button]{
+        padding: 0px 10px;
+    }
+    .Footer section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+ }
