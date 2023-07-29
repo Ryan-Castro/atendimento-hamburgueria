@@ -97,8 +97,12 @@ main>h1{
     .titleCard h1{
         font-size: 20px;
     }
+    .complements h2{
+        font-size: 17px;
+        font-weight: 300;
+    }
     .card{
-        height: 400px;
+        height: 450px;
     }
     .Footer input[type=button]{
         padding: 0px 10px;
