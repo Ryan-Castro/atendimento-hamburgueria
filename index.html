@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <main>
+        <h1>Faça o seu pedido</h1>
+        <div id="container">
+            <div class="card">
+                <div class="titleCard">
+                    <h1>Hamburguer simples</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                </div>
+                <div class="complements">
+                    <h2>Qual desses complementos você deseja retirar</h2>
+                    <ul id="list-hamburguerSimples">
+                        <li><input type="checkbox" id="hsAlface" value="Alface"><label for="hsAlface">Alface</label></li>
+                        <li><input type="checkbox" id="hsMilho" value="Milho"><label for="hsMilho">Milho</label></li>
+                        <li><input type="checkbox" id="hsTomate" value="Tomate"><label for="hsTomate">Tomate</label></li>
+                    </ul>
+                </div>
+                <div class="Footer">
+                    <section id="price-hamburguerSimples">Preço: 22</section>
+                    <section>
+                        <h3>Quantidade</h3>
+                        <input type="number" id="quant-hamburguerSimples" value="1" min="1" onchange="updatePrice('hamburguerSimples')">
+                        <input type="button" value="Adicionar ao carrinho" onclick="shop('hamburguerSimples')">
+                    </section>
+                </div>
+            </div>
+            <div class="card">
+                <div class="titleCard">
+                    <h1>Hamburguer Bacon</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                </div>
+                <div class="complements">
+                    <h2>Qual desses complementos você deseja retirar</h2>
+                    <ul id="list-hamburguerBacon">
+                        <li><input type="checkbox" id="hsAlface" value="Alface"><label for="hsAlface">Alface</label></li>
+                        <li><input type="checkbox" id="hsMilho" value="Milho"><label for="hsMilho">Milho</label></li>
+                        <li><input type="checkbox" id="hsTomate" value="Tomate"><label for="hsTomate">Tomate</label></li>
+                    </ul>
+                </div>
+                <div class="Footer">
+                    <section id="price-hamburguerBacon">
+                        Preço: 25
+                    </section>
+                    <section>
+                        <h3>Quantidade</h3>
+                        <input type="number" id="quant-hamburguerBacon" value="1" min="1" onchange="updatePrice('hamburguerBacon')">
+                        <input type="button" value="Adicionar ao carrinho" onclick="shop('hamburguerBacon')">
+                    </section>
+                </div>
+            </div>
+            <div class="card">
+                <div class="titleCard">
+                    <h1>Hamburguer Duplo</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                </div>
+                <div class="complements">
+                    <h2>Qual desses complementos você deseja retirar</h2>
+                    <ul id="list-hamburguerDuplo">
+                        <li><input type="checkbox" id="hsAlface" value="Alface"><label for="hsAlface">Alface</label></li>
+                        <li><input type="checkbox" id="hsMilho" value="Milho"><label for="hsMilho">Milho</label></li>
+                        <li><input type="checkbox" id="hsTomate" value="Tomate"><label for="hsTomate">Tomate</label></li>
+                    </ul>
+                </div>
+                <div class="Footer">
+                    <section id="price-hamburguerDuplo">
+                        Preço: 30
+                    </section>
+                    <section>
+                        <h3>Quantidade</h3>
+                        <input type="number" id="quant-hamburguerDuplo" value="1" min="1" onchange="updatePrice('hamburguerDuplo')">
+                        <input type="button" value="Adicionar ao carrinho" onclick="shop('hamburguerDuplo')">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Finalizar compra" id="inputShopping" onclick="sendOrder()">
+    </main>
+    <script src="src/script.js"></script>
+</body>
+</html>

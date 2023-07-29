@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    position: relative;
+    min-height: 100vh;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+main>h1{
+    text-align: center;
+    margin: 40px;
+} 
+#container{
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.titleCard{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(144, 233, 255);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.complements{
+    padding: 20px;
+}
+.complements h2{
+    margin-top: 10px;
+}
+.complements ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.complements li{
+    margin-bottom: 5px;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.Footer section{
+    display: flex;
+    gap: 20px;
+}
+
+.Footer input[type=button]{
+    padding: 0px 20px;
+}
+#inputShopping{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
